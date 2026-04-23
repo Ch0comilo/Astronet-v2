@@ -1,0 +1,36 @@
+# --- Python / Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints
+.venv/
+env/
+venv/
+ENV/
+
+# --- IDEs / Editors ---
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Data & Artifacts (Essential to exclude for repo health) ---
+# Excludes the raw light curve data and TFRecords
+data/
+
+# Excludes model training checkpoints and saved weights
+# If you want to keep a specific model, use: !checkpoints/your_best_model/
+checkpoints/
+!checkpoints/fa1t_38_run_2/
+
+# --- Notebooks ---
+# Excludes old experimentation to keep the repo clean
+old_notebooks/
+
+# --- OS Related ---
+.DS_Store
+Thumbs.db
+
+# --- Documentation ---
+docs/
