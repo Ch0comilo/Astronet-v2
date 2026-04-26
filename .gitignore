@@ -16,8 +16,12 @@ ENV/
 *.swo
 
 # --- Data & Artifacts (Essential to exclude for repo health) ---
-# Excludes the raw light curve data and TFRecords
-data/
+# Excludes the raw light curve data and TFRecords, except the test set
+data/*
+!data/tfrecords/
+data/tfrecords/*
+!data/tfrecords/test/
+!data/tces-v14-test.csv
 
 # Excludes model training checkpoints and saved weights, except fa1t_38_run_2
 checkpoints/*
