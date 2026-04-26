@@ -19,9 +19,8 @@ ENV/
 # Excludes the raw light curve data and TFRecords
 data/
 
-# Excludes model training checkpoints and saved weights
-# If you want to keep a specific model, use: !checkpoints/your_best_model/
-checkpoints/
+# Excludes model training checkpoints and saved weights, except fa1t_38_run_2
+checkpoints/*
 !checkpoints/fa1t_38_run_2/
 
 # --- Notebooks ---
