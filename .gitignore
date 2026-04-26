@@ -21,7 +21,10 @@ data/*
 !data/tfrecords/
 data/tfrecords/*
 !data/tfrecords/test/
+!data/tfrecords/val/
 !data/tces-v14-test.csv
+!data/tces-v14-val.csv
+!data/tces-v14-train.csv
 
 # Excludes model training checkpoints and saved weights, except fa1t_38_run_2
 checkpoints/*
